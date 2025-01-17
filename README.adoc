@@ -178,7 +178,7 @@ steps:
 
 [source, yaml, subs="+attributes"]
 ----
-runs-on: ubuntu-latest
+runs-on: ubuntu-24.04-arm  # or ubuntu-latest, but ARM runners are faster
 steps:
   - name: Setup Alpine Linux {alpine-latest} for ppc64le
     uses: {action-ref}
